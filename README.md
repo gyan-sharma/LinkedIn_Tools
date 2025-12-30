@@ -17,25 +17,48 @@ Automatically withdraws sent LinkedIn connection invitations from your account.
 
 ### Usage
 
+#### Method: Run as Snippet in Developer Tools
+
 1. **Navigate to LinkedIn Sent Invitations Page**
    - Go to: https://www.linkedin.com/mynetwork/invitation-manager/sent/
 
-2. **Open Browser Console**
-   - **Chrome/Edge**: Press `F12` or `Ctrl+Shift+J` (Windows/Linux) / `Cmd+Option+J` (Mac)
-   - **Firefox**: Press `F12` or `Ctrl+Shift+K` (Windows/Linux) / `Cmd+Option+K` (Mac)
-   - **Safari**: Enable Developer menu first, then press `Cmd+Option+C`
+2. **Open Developer Tools**
+   - **Chrome/Edge**: Press `F12` or `Ctrl+Shift+I` (Windows/Linux) / `Cmd+Option+I` (Mac)
+   - **Firefox**: Press `F12` or `Ctrl+Shift+I` (Windows/Linux) / `Cmd+Option+I` (Mac)
 
-3. **Copy and Paste the Script**
+3. **Open Snippets Panel (Chrome/Edge)**
+   - Click on the **Sources** tab (or **Debugger** in Firefox)
+   - In Chrome/Edge, look for **Snippets** in the left sidebar (if not visible, click the `>>` icon to expand)
+   - Click on **Snippets** to open the snippets panel
+
+4. **Create a New Snippet**
+   - Right-click in the Snippets panel and select **New snippet**
+   - Name it (e.g., "LinkedIn Withdraw")
+
+5. **Add the Script**
    - Copy the entire contents of `withdraw.js`
-   - Paste it into the console and press `Enter`
+   - Paste it into the snippet editor
+   - Press `Ctrl+S` (Windows/Linux) or `Cmd+S` (Mac) to save
 
-4. **Monitor Progress**
+6. **Run the Snippet**
+   - Right-click on the snippet name
+   - Select **Run** (or press `Ctrl+Enter` / `Cmd+Enter`)
+   - The script will start executing automatically
+
+7. **Monitor Progress**
+   - Check the **Console** tab for status messages
    - The script will run automatically, withdrawing invitations one by one
-   - Check the console for status messages
 
-5. **Stop the Script (if needed)**
-   - In the console, type: `window.__LI_STOP__ = true`
+8. **Stop the Script (if needed)**
+   - In the **Console** tab, type: `window.__LI_STOP__ = true`
    - Press `Enter` to stop execution
+
+#### Alternative: Run in Console (Quick Method)
+
+If you prefer not to use snippets, you can also:
+1. Open the **Console** tab in Developer Tools
+2. Copy and paste the entire contents of `withdraw.js`
+3. Press `Enter` to run
 
 ### Important Notes
 
